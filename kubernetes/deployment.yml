@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: online-shop
+  namespace: online-shopping
+  labels:
+    app: online-shop
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels: 
+      app: online-shop
+
+  template:
+    metadata:
+      labels: 
+       app: online-shop  
+    
+    spec:
+      containers:
+      - name: online-shop-container
+        image: adarshrajput07/online_shop:latest
+        ports:
+        - containerPort: 5173 
