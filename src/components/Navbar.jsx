@@ -30,7 +30,7 @@ export function Navbar() {
 
                     <div className="d-flex align-items-center gap-2">
                         <a 
-                            href="https://github.com/LondheShubham153/online_shop_hackathon" 
+                            href="https://github.com/Adarshrajput0770/online-shopping-app" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="social-button"
